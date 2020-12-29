@@ -1,0 +1,167 @@
+{
+    "name": "modex",
+    "displayName": "Modex",
+    "description": "A lightweight keymap for quick navigation.",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Keymaps",
+        "Other"
+    ],
+    "keywords": [
+        "keybinding",
+        "shortcuts",
+        "productivity",
+        "accessibility"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "keybindings": [
+            {
+                "command": "modex.toggle",
+                "key": "CapsLock"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "i",
+                "args": {
+                    "binding": "i"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "j",
+                "args": {
+                    "binding": "j"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "k",
+                "args": {
+                    "binding": "k"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "l",
+                "args": {
+                    "binding": "l"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "u",
+                "args": {
+                    "binding": "u"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "o",
+                "args": {
+                    "binding": "o"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "n",
+                "args": {
+                    "binding": "n"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "m",
+                "args": {
+                    "binding": "m"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": ";",
+                "args": {
+                    "binding": ";"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "p",
+                "args": {
+                    "binding": "p"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "c",
+                "args": {
+                    "binding": "c"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "x",
+                "args": {
+                    "binding": "x"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "v",
+                "args": {
+                    "binding": "v"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "e",
+                "args": {
+                    "binding": "e"
+                },
+                "when": "modex:toggled"
+            },
+            {
+                "command": "modex.keyEvent",
+                "key": "r",
+                "args": {
+                    "binding": "r"
+                },
+                "when": "modex:toggled"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.51.0",
+        "@types/node": "^12.11.7",
+        "eslint": "^7.9.0",
+        "@typescript-eslint/eslint-plugin": "^4.1.1",
+        "@typescript-eslint/parser": "^4.1.1",
+        "typescript": "^4.0.2",
+        "vscode-test": "^1.4.0"
+    }
+}
