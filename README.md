@@ -4,7 +4,9 @@
 Modex is an unpublished VSCode extension that partially implements some of my favourite navigation keybindings. 
 
 ## Functionality
-Modex uses capslock to toggle between two familiar modes: normal and insert. Insert mode leaves default keybindings unchanged. Normal mode maps navigation keys to the right hand of the home row, and maps some editing shortcuts to the left hand of the home row. The active mode is displayed on the status bar and indicated using an alteration to the caret.
+Modex uses capslock to toggle between two familiar modes: normal and insert. Insert mode leaves default keybindings unchanged. Normal mode maps navigation keys to the right hand of the home row, and maps some editing shortcuts to the left hand of the home row. The active mode is displayed on the status bar and indicated using an alteration to the caret:
+
+<img src="modex-preview.png" alt="Modex preview" width="250">
 
 Due to this extension using capslock to toggle modes, the underlying capslock state will be altered system wide during use. The capslock toggle works for me as I only ever hold shift to capitalise, but an alternative toggle key would be more suitable for those that use capslock regularly.
 
